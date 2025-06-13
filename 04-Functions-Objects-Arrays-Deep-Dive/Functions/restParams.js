@@ -7,6 +7,7 @@ function sum() {
     return totalSum;
 }
 
+// ES6 (2015)
 function sumWithRestParams(...arr) {
 
     let totalSum = 0;
