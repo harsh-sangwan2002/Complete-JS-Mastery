@@ -14,6 +14,7 @@ let obj2 = obj;
 // console.log(obj);
 
 // Shallow copy -> Using rest parameters introduced in ES6(2015)
+// Spread
 // obj2 = { ...obj };
 // obj2.name = "Vivek";
 // obj2.address.state.code = 2345;
