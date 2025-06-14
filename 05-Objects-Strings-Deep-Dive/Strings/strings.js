@@ -22,8 +22,5 @@ console.log(str.endsWith("sh")); // false
 // indexOf
 console.log(str.indexOf("ar"));
 
-let str2 = new String(123);
-console.log(typeof str2); // object
-
 let str3 = String(123);
 console.log(typeof str3); // string
