@@ -1,27 +1,3 @@
-// Function Currying
-// Question - 12
-
-
-// Question - 13
-
-
-// Question - 14
-function createEvenStack() {
-}
-
-const stack = new createEvenStack();
-stack.push(1);
-stack.push(2);
-console.log("Stack is: ", stack.items);
-
-stack.push(3);
-stack.push(4);
-console.log("Stack is: ", stack.items);
-
-// prevent this behaviour
-// stack.items = [100,200,300];
-
-// Question - 15
 function calc(n) {
     let sum = 0;
 
@@ -38,6 +14,19 @@ console.timeEnd();
 
 function memoize(cb) {
 
+    let res = {};
+
+    return function (n) {
+
+        if (res[n])
+            return res[n];
+
+        else {
+            let result = cb(n);
+            res[n] = result;
+            return result;
+        }
+    }
 }
 
 let efficientCalcFn = memoize(calc);
