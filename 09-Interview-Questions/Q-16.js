@@ -3,19 +3,22 @@ function createEvenStack() {
     let items = [];
 
     this.push = function (item) {
-        if (item % 2 === 0) {
+
+        if (item % 2 == 0)
             items.push(item);
-        } else {
-            console.log("Only even numbers are allowed");
-        }
+
+        else
+            console.log("Please push an even number");
+
     }
 
     this.pop = function () {
+
         return items.pop();
     }
 
     this.printItems = function () {
-        console.log("Items in stack: ", items);
+        console.log(items);
     }
 }
 
@@ -29,4 +32,4 @@ stack.push(4);
 stack.printItems();
 
 // prevent this behaviour
-// stack.items = [100, 200, 300];
+console.log(stack.items);

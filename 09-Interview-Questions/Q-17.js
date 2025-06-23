@@ -13,19 +13,15 @@ console.log(res);
 console.timeEnd();
 
 function memoize(cb) {
-
-    let res = {};
+    let cache = {};
 
     return function (n) {
 
-        if (res[n])
-            return res[n];
+        if (cache[n])
+            return cache[n];
 
-        else {
-            let result = cb(n);
-            res[n] = result;
-            return result;
-        }
+        else
+            return cache[n] = cb(n);
     }
 }
 
