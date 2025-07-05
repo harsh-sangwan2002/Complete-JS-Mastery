@@ -1,5 +1,7 @@
 # 🚀 Complete-JS-Mastery
 
+[YouTube Link](https://www.youtube.com/playlist?list=PLFZFo5euUvDM-x9ngX2BUJUEIDuFz4zL3)
+
 Welcome to **Complete-JS-Mastery** — your one-stop resource to learn everything about JavaScript and full-stack web development from scratch to advanced level. This repository is crafted to guide you through mastering:
 
 - ✅ Core JavaScript (ES6+)
